@@ -37,3 +37,13 @@ if __name__ == "__main__":
     bathroom.enter()
     kitchen:Room = Kitchen("Kitchen", "A kitchen with a fridge and a stove")
     kitchen.enter()
+
+    # Use dis to see the bytecode
+    import dis
+    print("*"*100)
+    dis.dis(bedroom.enter)
+    print("*"*100)
+    dis.dis(bathroom.enter)
+    print("*"*100)
+    dis.dis(kitchen.enter)
+    print("*"*100)
